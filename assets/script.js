@@ -1,11 +1,17 @@
+// Declaring variables
+
 var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
 var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+
+// Function to choose a topic
 
 function listTopics() {
     for (var x = 0; x < topics.length; x++){
         console.log(topics[x]);
     }
 }
+
+// Function dictating the message to display based on the topic
 
 function selectTopic() {
     if (randomTopic === 'HTML') {
@@ -19,7 +25,9 @@ function selectTopic() {
     } else {
       console.log('Please try again!');
     }
-  }
+}
+
+// Display the topics and topic to be studied first
 
 console.log('Here are the topics we learned through Prework:');
 listTopics ()
